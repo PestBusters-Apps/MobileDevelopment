@@ -4,7 +4,30 @@
     <string name="title_gallery">Gallery</string>
     <string name="title_history">History</string>
     <string name="title_profile">Profile</string>
-
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    //Main
+    <string name="pest_busters_title">PEST\nBUSTERS</string>
+    <string name="pest_busters_subtitle">Quick Detection, Pests Resolved,\nSuccessful Harvest!</string>
+
+    // EditText Hints
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login_button">Login</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+
+    <string name="nama_hama">NAMA HAMA</string>
+    <string name="detail_hama">Detail Hama</string>
+    <string name="tanggal_history">31-12-2024</string>
+    <string name="pest_gallery_title">Pest Gallery</string>
+    <string name="tutorial_card_desc">Gambar Icon Tutorial</string>
+    <string name="tutorial_card_title">TUTORIAL</string>
+    <string name="chatbot_card_desc">Gambar icon Bot</string>
+    <string name="chatbot_card_title">CHAT BOT</string>
+    <string name="history_title">HISTORY</string>
+    <string name="home_header_greeting">Halo, Bunny</string>
+    <string name="profile_image_desc">Photo Profile</string>
 </resources>

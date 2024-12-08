@@ -6,8 +6,24 @@ import androidx.lifecycle.ViewModel
 
 class ProfileViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is profile Fragment"
+    // Contoh data yang akan ditampilkan dalam ProfileFragment
+    private val _username = MutableLiveData<String>().apply {
+        value = "arkaan24135"
     }
-    val text: LiveData<String> = _text
+    private val _email = MutableLiveData<String>().apply {
+        value = "arkaan2003@gmail.com"
+    }
+
+    // Getter untuk data agar dapat diamati oleh fragment
+    val username: LiveData<String> get() = _username
+    val email: LiveData<String> get() = _email
+
+    // Fungsi untuk memperbarui data (contoh interaksi user)
+    fun updateUsername(newUsername: String) {
+        _username.value = newUsername
+    }
+
+    fun updateEmail(newEmail: String) {
+        _email.value = newEmail
+    }
 }

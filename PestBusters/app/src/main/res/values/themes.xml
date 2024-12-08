@@ -13,5 +13,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="fabAlignmentMode">center</item>
+        <item name="fabCradleMargin">0dp</item>
+        <item name="fabCradleRoundedCornerRadius">50dp</item>
+        <item name="fabCradleVerticalOffset">10dp</item>
+
     </style>
 </resources>

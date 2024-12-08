@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.pestbusters.databinding.FragmentProfileBinding
@@ -12,27 +11,27 @@ import com.example.pestbusters.databinding.FragmentProfileBinding
 class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
+    private lateinit var profileViewModel: ProfileViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
-
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
 
-        val textView: TextView = binding.textNotifications
-        profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        // Mengamati LiveData dan memperbarui UI
+        profileViewModel.username.observe(viewLifecycleOwner) { username ->
+            binding.usernameValue.text = username
         }
-        return root
+        profileViewModel.email.observe(viewLifecycleOwner) { email ->
+            binding.emailValue.text = email
+        }
+
+        return binding.root
     }
 
     override fun onDestroyView() {

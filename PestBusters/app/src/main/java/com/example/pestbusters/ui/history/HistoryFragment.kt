@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pestbusters.databinding.FragmentHistoryBinding
 import com.example.pestbusters.ui.history.HistoryViewModel
 
@@ -14,8 +15,6 @@ class HistoryFragment : Fragment() {
 
     private var _binding: FragmentHistoryBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -23,15 +22,15 @@ class HistoryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
+        val historyViewModel =
             ViewModelProvider(this).get(HistoryViewModel::class.java)
 
         _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        binding.historyHome.layoutManager = LinearLayoutManager(context)
 
-        val textView: TextView = binding.textHistory
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        historyViewModel.text.observe(viewLifecycleOwner) {
+            binding.historyHome.layoutManager = LinearLayoutManager(context)
         }
         return root
     }
