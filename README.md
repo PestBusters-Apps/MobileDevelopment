@@ -24,7 +24,7 @@ We are actively working on building a robust solution for pest detection in hydr
    - **Profile**: Manage user details and preferences.  
 - **Floating Action Button (FAB)**:  
    - Quickly capture or upload images using your device's camera or gallery.
-   - 
+     
 ---
 
 ## **🚀 How It Works**  
