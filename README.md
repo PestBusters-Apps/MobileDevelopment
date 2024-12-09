@@ -9,12 +9,22 @@ We are actively working on building a robust solution for pest detection in hydr
 
 ---
 
-## **🛠️ Features**  
+## **📱 Features**  
 
 - **Pest Detection**: Identify pests on leafy vegetables with high accuracy using mobile devices or cameras.  
 - **Hydroponic Focus**: Optimized for pest challenges specific to hydroponic farming systems.  
-- **Interactive Chatbot**: Provides pest identification and tailored control recommendations.  
-
+- **Login/Register**: Access personalized features. 
+- **Bottom Navigation**:   
+   - **Home**:  
+     - **Tutorial**: Step-by-step guide to use the app.  
+     - **Nara Chat**: Interactive chatbot to identify pests and suggest control methods.  
+     - **#FYI**: General information about pests and leafy vegetables.  
+   - **Pest Gallery**: Browse a library of labeled pest images.  
+   - **History**: View your previous pest detections and recommendations.  
+   - **Profile**: Manage user details and preferences.  
+- **Floating Action Button (FAB)**:  
+   - Quickly capture or upload images using your device's camera or gallery.
+   - 
 ---
 
 ## **🚀 How It Works**  
@@ -33,21 +43,6 @@ We are actively working on building a robust solution for pest detection in hydr
 
 ---
 
-## **📱 Additional Features**  
-- **Login/Register**: Access personalized features. 
-- **Bottom Navigation**:   
-   - **Home**:  
-     - **Tutorial**: Step-by-step guide to use the app.  
-     - **Nara Chat**: Interactive chatbot to identify pests and suggest control methods.  
-     - **#FYI**: General information about pests and leafy vegetables.  
-   - **Pest Gallery**: Browse a library of labeled pest images.  
-   - **History**: View your previous pest detections and recommendations.  
-   - **Profile**: Manage user details and preferences.  
-
-- **Floating Action Button (FAB)**:  
-   - Quickly capture or upload images using your device's camera or gallery.  
-
----
 
 ## **🎨 Design Reference**  
 
