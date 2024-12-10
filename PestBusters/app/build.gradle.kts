@@ -59,4 +59,7 @@ dependencies {
     implementation (libs.glide)
     implementation (libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation("androidx.webkit:webkit:1.8.0")
+    implementation ("org.nanohttpd:nanohttpd:2.3.1")
+
 }

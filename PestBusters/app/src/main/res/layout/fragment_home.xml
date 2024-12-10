@@ -53,19 +53,20 @@
                 android:id="@+id/tutorial_card"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                app:cardCornerRadius="16dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/mainGreen"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintEnd_toStartOf="@id/chatbot_card"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/chatbot_card"
-                app:layout_constraintWidth_percent="0.48">
+                app:layout_constraintWidth_percent="0.48"
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="60dp"
@@ -77,10 +78,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/tutorial_card_title"
-                        android:textSize="14sp"
                         android:textColor="@android:color/black"
-                        android:fontFamily="@font/poppins_bold" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -89,19 +90,20 @@
                 android:id="@+id/chatbot_card"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                app:cardCornerRadius="16dp"
+                android:layout_marginStart="8dp"
                 app:cardBackgroundColor="@color/mainGreen"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tutorial_card"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintWidth_percent="0.48"
-                android:layout_marginStart="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="60dp"

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestbusters Chat</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: Google Sans;
+            --df-messenger-chat-background: #C8E6C9;
+            --df-messenger-message-user-background: #4CAF50;
+            --df-messenger-message-bot-background: #EEF7EE;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dialogflow Messenger -->
+    <df-messenger
+        project-id="pest-busters"
+        agent-id="0d5f7eac-34b4-4844-8a2c-3444af34e95f"
+        language-code="id"
+        max-query-length="-1">
+        <df-messenger-chat chat-title="Chat Nara"></df-messenger-chat>
+    </df-messenger>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+</body>
+</html>
