@@ -5,10 +5,13 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pestbusters.databinding.ActivityChatBotBinding
+import com.example.pestbusters.localserver.LocalServer
+import java.io.File
 
 class ChatBotActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityChatBotBinding
+    private lateinit var server: LocalServer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,10 +22,26 @@ class ChatBotActivity : AppCompatActivity() {
 
         WebView.setWebContentsDebuggingEnabled(true)
 
-        val myWebView = binding.webview
-        myWebView.settings.javaScriptEnabled = true
-        myWebView.settings.domStorageEnabled = true
-        myWebView.settings.mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
-        myWebView.loadUrl("file:///android_asset/chatbot.html")
+        // Copy chatbot.html from assets to a readable path
+        val htmlFilePath = "${filesDir.absolutePath}/chatbot.html"
+        assets.open("chatbot.html").use { input ->
+            File(htmlFilePath).outputStream().use { output ->
+                input.copyTo(output)
+            }
+        }
+
+        // Start local HTTP server
+        server = LocalServer(8080, htmlFilePath)
+        server.start()
+
+        // Configure WebView
+        binding.webview.settings.javaScriptEnabled = true
+        binding.webview.settings.domStorageEnabled = true
+        binding.webview.loadUrl("http://localhost:8080")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        server.stop()
     }
 }
