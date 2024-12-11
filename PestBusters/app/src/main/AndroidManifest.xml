@@ -40,10 +40,16 @@
             android:name=".LoginActivity"
             android:exported="true">
         </activity>
+<<<<<<< Updated upstream
 
         <activity
             android:name=".ChatBotActivity"
             android:exported="true">
+=======
+        <activity
+            android:name=".DetailActivityFyi"
+            android:exported="false">
+>>>>>>> Stashed changes
         </activity>
     </application>
 
