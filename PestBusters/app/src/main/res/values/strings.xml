@@ -26,8 +26,109 @@
     <string name="tutorial_card_desc">Gambar Icon Tutorial</string>
     <string name="tutorial_card_title">TUTORIAL</string>
     <string name="chatbot_card_desc">Gambar icon Bot</string>
-    <string name="chatbot_card_title">CHAT BOT</string>
-    <string name="history_title">HISTORY</string>
-    <string name="home_header_greeting">Halo, Bunny</string>
+    <string name="chatbot_card_title">NARA CHAT</string>
+    <string name="history_title">History</string>
+    <string name="home_header_greeting">Halo</string>
     <string name="profile_image_desc">Photo Profile</string>
+    <string name="fyi_name">Nama FYI</string>
+    <string name="fyi_description">FYI Description</string>
+    <string name="fyi_title">#FYI</string>
+    <string name="fyi">#FYI</string>
+    <string name="logout">LOGOUT</string>
+    <string name="isiUsername">bunny_juan</string>
+    <string name="isiEmail">bunnyjuanda@gmail.com</string>
+
+    //FYI
+    <string-array name="data_name">
+        <item>Apasih Yang Dimaksud dengan Hama?</item>
+        <item>Apa Itu Hidroponik?</item>
+        <item>Kenapa Deteksi Dini Hama Itu Penting Banget?</item>
+        <item>Seru! Cara Modern Deteksi Hama yang Wajib Kamu Coba</item>
+        <item>Hati-Hati! Ini Dampak Hama yang Harus Kamu Tahu</item>
+        <item>Keuntungan Pertanian Hidroponik</item>
+        <item>Pengenalan Teknologi dalam Pertanian</item>
+        <item>Memahami Sistem Hidroponik</item>
+        <item>Mengurangi Penggunaan Pestisida</item>
+        <item>Masa Depan Pertanian Indonesia</item>
+    </string-array>
+
+    <string-array name="data_description">
+    <item>Hama adalah organisme yang merugikan, seperti serangga, kutu, ulat, jamur, atau tikus, yang menyerang tanaman dan menyebabkan kerugian bagi petani. Mereka menyerang bagian vital tanaman, seperti daun, batang, akar, atau buah, dan dapat menurunkan produktivitas hasil panen. Di Indonesia, serangan hama seringkali menjadi ancaman utama bagi petani, terutama mereka yang menanam sayuran hidroponik yang sensitif.
+    \n\nMengelola hama secara efektif memerlukan pemahaman mendalam mengenai jenis hama yang menyerang serta metode pengendalian yang tepat. Pengendalian hama tidak hanya bertujuan untuk meningkatkan hasil panen, tetapi juga mencegah kerusakan jangka panjang pada ekosistem pertanian. Dengan pengetahuan yang cukup, petani dapat meminimalkan dampak hama dan meningkatkan keberlanjutan usaha tani mereka.</item>
+
+        <item>Hidroponik adalah metode bercocok tanam modern tanpa menggunakan tanah, melainkan memanfaatkan media tanam seperti air yang kaya nutrisi, rockwool, atau serbuk kelapa. Teknik ini sangat efisien dan populer di kalangan petani perkotaan, terutama karena tidak memerlukan lahan luas. Hidroponik memungkinkan kontrol penuh atas kondisi tanaman, seperti kadar nutrisi, pH, dan kelembapan.
+    \n\nMetode ini tidak hanya menghasilkan tanaman yang sehat, tetapi juga ramah lingkungan karena menggunakan lebih sedikit air dibandingkan pertanian konvensional. Hidroponik menjadi solusi masa depan yang menjanjikan untuk mendukung ketahanan pangan, terutama di negara-negara dengan lahan terbatas seperti Indonesia. Selain itu, hasil panen hidroponik cenderung lebih bersih, segar, dan bebas pestisida, sehingga semakin diminati oleh konsumen.</item>
+
+        <item>Deteksi dini terhadap hama sangat penting dalam mencegah kerusakan tanaman. Hama yang terdeteksi lebih awal memungkinkan petani untuk mengambil tindakan pengendalian sebelum kerugian menjadi lebih besar. Sebagai contoh, ulat yang menyerang daun tanaman dapat dengan cepat menyebar jika tidak segera diatasi. Kerusakan ini tidak hanya mengurangi hasil panen, tetapi juga memengaruhi kualitas produk pertanian.
+    \n\nSelain itu, deteksi dini membantu petani menghemat biaya. Dengan mengetahui jenis hama dan tingkat serangannya, petani dapat memilih metode pengendalian yang paling efisien dan ramah lingkungan, tanpa perlu menggunakan pestisida secara berlebihan. Langkah ini juga mendukung praktik pertanian berkelanjutan yang lebih sehat untuk lingkungan.</item>
+
+        <item>Di era modern, deteksi hama kini dapat dilakukan dengan bantuan teknologi seperti kamera dan aplikasi berbasis kecerdasan buatan (AI). Dengan mengambil foto tanaman yang terinfeksi, aplikasi seperti PestBusters dapat mengidentifikasi jenis hama secara akurat hanya dalam hitungan detik. Teknologi ini mempermudah petani yang sebelumnya harus bergantung pada pengalaman manual untuk mengenali serangan hama.
+    \n\nSelain deteksi, aplikasi modern juga menyediakan rekomendasi tindakan yang tepat, termasuk jenis pengendalian yang sesuai, baik itu penggunaan pestisida alami, predator biologis, atau langkah pencegahan lainnya. Dengan solusi digital seperti ini, petani dapat meningkatkan efisiensi kerja, mengurangi kerugian, dan meningkatkan hasil panen dengan cara yang lebih cerdas.</item>
+
+        <item>Hama memiliki dampak signifikan terhadap sektor pertanian, mulai dari penurunan hasil panen hingga kerugian ekonomi yang besar. Di Indonesia, kerugian akibat hama seperti wereng, ulat grayak, atau kutu daun dapat mencapai miliaran rupiah setiap tahunnya. Tanaman seperti sayuran hidroponik juga tidak luput dari ancaman ini, meskipun ditanam dalam lingkungan yang lebih terkontrol.
+    \n\nLebih dari sekadar kerugian finansial, serangan hama juga memengaruhi stabilitas pasokan pangan. Ketika produksi menurun, harga komoditas meningkat, yang pada akhirnya berdampak pada konsumen. Oleh karena itu, penting bagi petani untuk terus beradaptasi dengan metode pengelolaan hama yang lebih efisien dan berkelanjutan.</item>
+
+        <item>Hidroponik menawarkan banyak keuntungan dibandingkan pertanian konvensional. Salah satunya adalah efisiensi penggunaan air hingga 90%, yang menjadikannya pilihan ideal untuk wilayah dengan keterbatasan sumber daya air. Hidroponik juga memungkinkan produksi tanaman sepanjang tahun tanpa tergantung pada musim, sehingga meningkatkan produktivitas secara signifikan.
+    \n\nSelain itu, metode ini membantu mengurangi risiko serangan hama karena tanaman ditanam dalam lingkungan yang terkontrol. Hidroponik juga ramah lingkungan, karena meminimalkan penggunaan pestisida dan menghasilkan limbah yang lebih sedikit. Dengan semua keunggulan ini, hidroponik semakin menjadi pilihan utama untuk mendukung pertanian modern di era perubahan iklim.</item>
+
+        <item>Teknologi dalam pertanian semakin canggih, membawa transformasi besar bagi para petani. Dari penggunaan sensor IoT yang memantau kelembapan tanah hingga aplikasi berbasis AI untuk mendeteksi hama, teknologi telah menjadi bagian integral dari praktik pertanian modern. Inovasi ini tidak hanya membantu meningkatkan efisiensi, tetapi juga mengurangi dampak lingkungan dari aktivitas pertanian.
+    \n\nDi Indonesia, penggunaan teknologi pertanian masih terus berkembang, dengan fokus pada peningkatan hasil panen dan pengelolaan sumber daya secara lebih efisien. Dengan dukungan teknologi, petani kecil hingga besar dapat meningkatkan daya saing mereka di pasar global, sekaligus mendukung keberlanjutan pertanian di masa depan.</item>
+
+        <item>Sistem hidroponik terdiri dari berbagai metode yang dirancang untuk memenuhi kebutuhan tanaman tertentu. Contohnya adalah sistem NFT (Nutrient Film Technique) yang mengalirkan larutan nutrisi melalui akar tanaman, atau sistem tetes yang memberikan nutrisi secara perlahan. Setiap sistem memiliki keunggulan tersendiri, tergantung pada jenis tanaman yang dibudidayakan dan skala operasinya.
+    \n\nPetani hidroponik juga dapat memilih jenis media tanam seperti rockwool atau serbuk kelapa, yang membantu mendukung pertumbuhan akar. Dengan memahami berbagai sistem ini, petani dapat memaksimalkan potensi hasil panen mereka dan mengoptimalkan penggunaan sumber daya.</item>
+
+        <item>Penggunaan pestisida secara berlebihan memiliki dampak negatif yang signifikan, seperti polusi lingkungan, resistensi hama, dan risiko kesehatan bagi manusia. Oleh karena itu, pendekatan yang lebih ramah lingkungan diperlukan untuk mengurangi ketergantungan pada pestisida kimia. Salah satu solusinya adalah dengan menggunakan pestisida biologis, seperti predator alami atau bahan organik.
+    \n\nSelain itu, teknologi deteksi hama seperti PestBusters dapat membantu petani mengidentifikasi masalah lebih awal, sehingga tindakan yang diambil lebih terarah dan efisien. Dengan langkah ini, petani dapat menciptakan ekosistem pertanian yang lebih sehat dan berkelanjutan.</item>
+
+        <item>Indonesia memiliki potensi besar untuk menjadi pemimpin di bidang pertanian modern. Dengan kekayaan sumber daya alam dan dukungan teknologi, sektor pertanian Indonesia dapat mengatasi tantangan seperti perubahan iklim dan peningkatan populasi. Aplikasi seperti PestBusters berkontribusi dalam mempersiapkan masa depan pertanian yang lebih produktif dan berkelanjutan.
+    \n\nMasa depan pertanian Indonesia tidak hanya bergantung pada hasil panen, tetapi juga pada kemampuan untuk memanfaatkan teknologi dan inovasi. Dengan berinvestasi dalam solusi modern, Indonesia dapat mencapai ketahanan pangan dan mengukuhkan posisinya di pasar global sebagai produsen pangan yang unggul.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/hama</item>
+        <item>@drawable/hidroponik</item>
+        <item>@drawable/deteksi</item>
+        <item>@drawable/modern</item>
+        <item>@drawable/dampak</item>
+        <item>@drawable/keuntungan</item>
+        <item>@drawable/teknologi</item>
+        <item>@drawable/sistem</item>
+        <item>@drawable/pestisida</item>
+        <item>@drawable/indonesia</item>
+    </integer-array>
+
+    // Tutorial
+    <string name="tutorial_title">Tutorial</string>
+    <string name="tutorial_description">
+        Menu Pest Busters App:
+        \n- Home:
+        \nIni adalah layar utama tempat Anda memulai eksplorasi di Pest Busters. Di sini, Anda akan menemukan tutorial, NaraBot si chatbot pintar yang siap menjawab pertanyaan tentang hama, serta menu #FYI yang berisi informasi menarik dan bermanfaat tentang hama dan tanaman.
+
+        \n\n- Pest Gallery:
+        \nGaleri khusus yang menyediakan informasi mendalam tentang berbagai jenis hama. Anda dapat mempelajari karakteristik, dampak, dan cara mengelola hama-hama ini. Sangat cocok untuk menambah wawasan!
+
+        \n\n- History:
+        \nBagian ini menyimpan jejak identifikasi hama yang pernah Anda lakukan. Anda bisa melihat daftar hama yang telah dianalisis, lengkap dengan detail dan waktu identifikasinya.
+
+        \n\n- Profile:
+        \nTempat Anda mengelola informasi pribadi. Di sini, Anda dapat melihat nama dan email yang terdaftar, serta menggunakan tombol logout untuk keluar dari aplikasi dengan aman.
+
+        \n\n- FAB Camera:
+        \nTombol ikonik berbentuk kamera yang melayang di layar. Dengan satu sentuhan, Anda dapat membuka kamera untuk mulai mengidentifikasi hama atau tanaman di sekitar Anda.
+
+        \n\n\nCara Menggunakan:
+        \n1. Login atau Register terlebih dahulu menggunakan email Anda untuk mengakses semua fitur.
+        \n2. Setelah berhasil masuk, Anda bisa mulai eksplorasi di menu Home untuk melihat panduan dan bertanya kepada NaraBot.
+        \n3. Jika ingin langsung mengidentifikasi hama, tekan tombol FAB Camera. Kamera akan terbuka siap untuk memindai.
+        \n4. Arahkan kamera ke hama atau tanaman yang ingin Anda analisis. Pastikan pencahayaannya cukup agar hasil identifikasi lebih akurat.
+        \n5. Tunggu beberapa saat, dan Anda akan mendapatkan hasil identifikasi berupa informasi detail tentang hama atau tanaman tersebut.
+
+        \n\nNikmati perjalanan Anda bersama Pest Busters, aplikasi yang dirancang untuk membantu Anda memahami, mengenali, dan mengelola hama dengan cara yang praktis dan menyenangkan!</string>
+    <string name="tutorial_image_desc">Image Tutorial</string>
+
+    // Detail
+    <string name="tvplaceholder">tvPlaceHolder</string>
+    <string name="detail">DETAIL</string>
+    <string name="cara_penanganan">Cara Penanganan</string>
+
 </resources>

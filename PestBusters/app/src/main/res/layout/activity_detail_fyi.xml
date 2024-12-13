@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/detail"
+            android:text="@string/fyi"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="30sp"
@@ -46,29 +46,11 @@
             android:id="@+id/tv_how_to"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             android:fontFamily="@font/poppins_medium"
-            android:lineSpacingExtra="4dp"
-            android:text="@string/cara_penanganan"
-            android:textColor="@color/secondGreen"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/tv_material"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="4dp"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins_medium" />
-
-        <TextView
-            android:id="@+id/tv_treatment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="4dp"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins_medium" />
+            />
 
     </LinearLayout>
 

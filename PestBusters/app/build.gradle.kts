@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -51,6 +53,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.legacy.support.v4)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.room.common)
+    implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,4 +63,7 @@ dependencies {
     implementation (libs.glide)
     implementation (libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation("androidx.webkit:webkit:1.8.0")
+    implementation ("org.nanohttpd:nanohttpd:2.3.1")
+
 }
