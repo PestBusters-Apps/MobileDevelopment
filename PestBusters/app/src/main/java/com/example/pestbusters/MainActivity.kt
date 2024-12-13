@@ -214,6 +214,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToDetail(classLabel: String, imageUri: Uri) {
+        // History currently closed due to error
 //        saveHistoryToDatabase(classLabel, imageUri)
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra("CLASS_LABEL", classLabel)
