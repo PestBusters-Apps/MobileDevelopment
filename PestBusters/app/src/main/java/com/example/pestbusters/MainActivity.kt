@@ -27,16 +27,21 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
 import android.Manifest
+import android.util.Base64
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pestbusters.data.AppDatabase
+import com.example.pestbusters.data.HistoryEntity
+import java.io.ByteArrayOutputStream
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val apiService = ApiConfig.apiService
-    private lateinit var rvFyi: RecyclerView
-    private val list = ArrayList<Fyi>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,47 +75,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        rvFyi = findViewById(R.id.rv_fyi)
-        rvFyi.setHasFixedSize(true)
-
-        list.addAll(getListfyi())
-        showRecyclerList()
-
-//        binding.fabPickImage.setOnClickListener {
-//            val intent = Intent(this, DetailActivity::class.java)
-//            startActivity(intent)
-//        }
-    }
-
-    private fun getListfyi(): ArrayList<Fyi> {
-        val dataName = resources.getStringArray(R.array.data_name)
-        val dataDescription = resources.getStringArray(R.array.data_description)
-        val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
-        val listFyi = ArrayList<Fyi>()
-        for (i in dataName.indices) {
-            val fyi = Fyi(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
-            listFyi.add(fyi)
-        }
-        return listFyi
-    }
-
-    private fun showRecyclerList() {
-        rvFyi.layoutManager = LinearLayoutManager(this)
-        val listFyiAdapter = ListFyiAdapter(list)
-        rvFyi.adapter = listFyiAdapter
-        listFyiAdapter.setOnItemClickCallback(object : ListFyiAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Fyi) {
-                showSelectedPlace(data)
-            }
-        })
-    }
-
-    private fun showSelectedPlace(place: Fyi) {
-        val intent = Intent(this, DetailActivityFyi::class.java)
-        intent.putExtra(DetailActivityFyi.EXTRA_NAME, place.name)
-        intent.putExtra(DetailActivityFyi.EXTRA_DESCRIPTION, place.description)
-        intent.putExtra(DetailActivityFyi.EXTRA_PHOTO, place.photo)
-        startActivity(intent)
     }
 
     private fun hasReadMediaPermission(): Boolean {
@@ -160,7 +124,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("ImageUpload", "File created: ${it.absolutePath}")
 
             val requestBody = RequestBody.create("image/*".toMediaTypeOrNull(), it)
-            val multipartBody = MultipartBody.Part.createFormData("image", it.name, requestBody)
+            val multipartBody = MultipartBody.Part.createFormData("file", it.name, requestBody)
 
             lifecycleScope.launch {
                 try {
@@ -171,7 +135,7 @@ class MainActivity : AppCompatActivity() {
                         val predictions = response.body()?.predictions
                         if (!predictions.isNullOrEmpty()) {
                             val firstClassLabel = predictions[0].class_label
-                            navigateToDetail(firstClassLabel)
+                            navigateToDetail(firstClassLabel, imageUri)
                         } else {
                             showToast("No predictions found.")
                         }
@@ -225,7 +189,32 @@ class MainActivity : AppCompatActivity() {
         return fileName
     }
 
-    private fun navigateToDetail(classLabel: String) {
+    private fun saveHistoryToDatabase(classLabel: String, imageUri: Uri) {
+        val database = AppDatabase.getDatabase(this)
+        val historyDao = database.historyDao()
+
+        val currentDate = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
+        val imageBase64 = uriToBase64(imageUri)
+
+        lifecycleScope.launch {
+            val history = HistoryEntity(
+                classLabel = classLabel,
+                date = currentDate,
+                imageBase64 = imageBase64
+            )
+            historyDao.insertHistory(history)
+        }
+    }
+
+    private fun uriToBase64(uri: Uri): String {
+        val inputStream = contentResolver.openInputStream(uri)
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        inputStream?.copyTo(byteArrayOutputStream)
+        return Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT)
+    }
+
+    private fun navigateToDetail(classLabel: String, imageUri: Uri) {
+//        saveHistoryToDatabase(classLabel, imageUri)
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra("CLASS_LABEL", classLabel)
         startActivity(intent)

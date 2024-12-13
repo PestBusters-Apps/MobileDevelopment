@@ -125,4 +125,10 @@
 
         \n\nNikmati perjalanan Anda bersama Pest Busters, aplikasi yang dirancang untuk membantu Anda memahami, mengenali, dan mengelola hama dengan cara yang praktis dan menyenangkan!</string>
     <string name="tutorial_image_desc">Image Tutorial</string>
+
+    // Detail
+    <string name="tvplaceholder">tvPlaceHolder</string>
+    <string name="detail">DETAIL</string>
+    <string name="cara_penanganan">Cara Penanganan</string>
+
 </resources>

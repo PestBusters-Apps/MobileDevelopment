@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/pest_image"
+            android:id="@+id/iv_pest_image"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:scaleType="centerCrop"
@@ -27,7 +27,7 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/pest_name"
+                android:id="@+id/tv_pest_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nama_hama"
@@ -36,14 +36,14 @@
                 android:fontFamily="@font/poppins_bold" />
 
             <TextView
-                android:id="@+id/pest_description"
+                android:id="@+id/tv_pest_description"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_medium"
                 android:text="@string/detail_hama"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="14sp"
-                android:fontFamily="@font/poppins_medium" />
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

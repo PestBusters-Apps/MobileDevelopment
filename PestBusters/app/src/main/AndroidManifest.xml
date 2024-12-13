@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
 
     <application
         android:allowBackup="true"
@@ -19,38 +20,43 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-<!--        Sementara langsung ke main, biar cepet-->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
         </activity>
 
         <activity
             android:name=".LoginActivity"
             android:exported="true">
         </activity>
-<<<<<<< Updated upstream
 
         <activity
             android:name=".ChatBotActivity"
             android:exported="true">
-=======
+        </activity>
+
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true">
+        </activity>
+
         <activity
             android:name=".DetailActivityFyi"
             android:exported="false">
->>>>>>> Stashed changes
         </activity>
+
+        <activity
+            android:name=".TutorialActivity"
+            android:exported="false">
+        </activity>
+
     </application>
 
 </manifest>

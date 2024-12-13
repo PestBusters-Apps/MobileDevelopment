@@ -15,7 +15,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tv_header"
+            android:id="@+id/tv_Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -26,13 +26,13 @@
             android:gravity="center" />
 
         <ImageView
-            android:id="@+id/img_detail_photo"
+            android:id="@+id/iv_Image_Detail"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginBottom="16dp" />
 
         <TextView
-            android:id="@+id/tv_detail_name"
+            android:id="@+id/tv_Class_Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
@@ -43,7 +43,7 @@
             android:layout_marginBottom="8dp" />
 
         <TextView
-            android:id="@+id/tv_detail_description"
+            android:id="@+id/tv_how_to"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="4dp"

@@ -80,14 +80,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_bold"
                         android:text="@string/tutorial_card_title"
-<<<<<<< Updated upstream
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
-=======
                         android:textSize="14sp"
-                        android:textColor="@color/secondGreen"
-                        android:fontFamily="@font/poppins_bold" />
->>>>>>> Stashed changes
+                        android:textColor="@color/secondGreen" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -143,6 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="65dp"
             tools:listitem="@layout/item_row_fyi" />
     </LinearLayout>
 </ScrollView>

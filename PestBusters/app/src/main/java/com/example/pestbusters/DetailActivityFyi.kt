@@ -14,12 +14,13 @@ class DetailActivityFyi : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         enableEdgeToEdge()
         setContentView(R.layout.activity_detail_fyi)
 
-        imgPhoto = findViewById(R.id.img_detail_photo)
-        tvName = findViewById(R.id.tv_detail_name)
-        tvDescription = findViewById(R.id.tv_detail_description)
+        imgPhoto = findViewById(R.id.iv_Image_Detail)
+        tvName = findViewById(R.id.tv_Class_Label)
+        tvDescription = findViewById(R.id.tv_how_to)
 
         val placeName = intent.getStringExtra(EXTRA_NAME)
         val placeDescription = intent.getStringExtra(EXTRA_DESCRIPTION)
